@@ -7,12 +7,13 @@ const light: DefaultTheme = {
   colors: {
     ...common.colors,
     toggleBorder: "#ABB7C4",
-    gradient: "linear-gradient(#39598A, #79D7ED)",
-    background: "#282C34",
-    headerBg: "#20232A",
+    toggleBackground: "#C1BB9F",
+    background: "#C1BB9F",
+    headerBg: "#F4EED8",
     cardsBg: "#FFFFFF",
     textColor: "#000000",
     dodgerBlue: "#007BFF",
+    logo: "#3f3d3e"
   },
 };
 

@@ -1,4 +1,5 @@
 import React from "react";
+import '../css/main.css'
 import { AppProps } from "next/app";
 import { StyledThemeProvider } from "@definitions/styled-components";
 import { Provider } from "react-redux";

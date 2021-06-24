@@ -1,8 +1,18 @@
 import React from "react";
-import Image from "next/image";
+import { Wrapper, Container, StyledTitle } from "./styled";
+
+import Link from 'next/link'
+
 
 export const Logo: React.FC = () => {
   return (
-    <Image src="/icons/nextjs-icon.svg" alt="nextjs" width="96" height="58" />
+    <Wrapper>
+      <Link href="/">
+        <Container>
+          <StyledTitle>Gaston Otero</StyledTitle>
+        </Container>
+      </Link>
+    </Wrapper>
+
   );
 };

@@ -11,7 +11,10 @@ export const Container = styled.div`
   align-items: center;
   justify-content: space-between;
   text-align: center;
-  max-width: 95%;
-  min-width: 95%;
-
+  cursor:pointer;
+  color: ${({ theme }) => theme.colors.logo};
 `;
+
+export const StyledTitle = styled.h1`
+  font-size: 40px
+`

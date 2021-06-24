@@ -6,14 +6,7 @@ import { Container, LogoButton, List, ListItem } from "./styled";
 export const Footer: React.FC = () => {
   return (
     <Container>
-      <LogoButton href="https://github.com/pankod" target="_blank">
-        <Image
-          src="/icons/pankod-icon.svg"
-          alt="pankod"
-          width="140"
-          height="28"
-        />
-      </LogoButton>
+      
       <List>
         <ListItem>
           <Image
@@ -29,14 +22,6 @@ export const Footer: React.FC = () => {
             alt="twitter"
             width="28"
             height="28"
-          />
-        </ListItem>
-        <ListItem>
-          <Image
-            src="/icons/youtube-icon.svg"
-            alt="youtube"
-            width="28"
-            height="29"
           />
         </ListItem>
         <ListItem>

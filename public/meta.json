@@ -1,35 +1,20 @@
 {
   "name": "gastonotero-next",
-  "plugins": [
+  "sections": [
     {
-      "name": "Styled Components",
-      "description": "Utilising tagged template literals (a recent addition to JavaScript) and the power of CSS, styled-components allows you to write actual CSS code to style your components.",
-      "url": "https://styled-components.com/docs"
+      "name": "Blog",
+      "description": "Tech blog, mainly about software development, networking and linux. Beware, because I'm a free software enthusiast.",
+      "url": "/blog"
     },
     {
-      "name": "Fetch",
-      "description": "Next.js has a built-in polyfill for the fetch API. You don't need to worry about using it on either server or client side.",
-      "url": "https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API"
+      "name": "Projects",
+      "description": "All my personal projects, many of them have their source code included.",
+      "url": "/projects"
     },
     {
-      "name": "Axios",
-      "description": "Promise based HTTP client for the browser and node.js.",
-      "url": "https://github.com/axios/axios"
-    },
-    {
-      "name": "Environment Variables",
-      "description": "Use environment variables in your next.js project for server side, client or both.",
-      "url": "https://github.com/vercel/next.js/tree/canary/examples/environment-variables"
-    },
-    {
-      "name": "React Redux",
-      "description": "Redux helps you write applications that behave consistently, run in different environments (client, server, and native), and are easy to test.",
-      "url": "https://redux.js.org/introduction/getting-started"
-    },
-    {
-      "name": "Docker",
-      "description": "",
-      "url": ""
+      "name": "Resume",
+      "description": "I'm currently employed and not looking for new opportunities, but feel free to check it out if you want!",
+      "url": "/resume"
     }
   ]
 }

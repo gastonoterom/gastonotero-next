@@ -9,7 +9,7 @@ import { dark } from "./dark";
 import { light } from "./light";
 
 export const ThemeContext = React.createContext({
-  theme: "light",
+  theme: "dark",
   toggle: () => undefined,
 });
 
@@ -20,7 +20,7 @@ export const useTheme = () => {
 };
 
 export const StyledThemeProvider: React.FC = ({ children }) => {
-  const [theme, setTheme] = React.useState("light");
+  const [theme, setTheme] = React.useState("dark");
 
   const toggle = () => {
     setTheme((theme) => (theme === "light" ? "dark" : "light"));

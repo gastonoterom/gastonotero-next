@@ -15,11 +15,13 @@ export const Container = styled.div`
   h1 {
     font-size: 5.5rem;
     font-weight: 300;
-    line-height: 1.2rem;
-    padding-bottom: 0.75rem;
+    line-height: 5.5rem;
+    padding-bottom: 10vh;
+    color: ${({ theme }) => theme.colors.textColor};
   }
   p {
     font-size: 1.25rem;
     font-weight: 300;
+    color: ${({ theme }) => theme.colors.textColor};
   }
 `;

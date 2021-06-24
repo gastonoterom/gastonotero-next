@@ -20,8 +20,8 @@ export const Row = styled.div`
 `;
 
 export const Col = styled.div`
-  flex: 0 0 25%;
-  max-width: 25%;
+  flex: 0 0 33%;
+  max-width: 33%;
 
   @media (max-width: 575px) {
     max-width: 100%;
@@ -43,6 +43,8 @@ export const CardTitle = styled.h3`
   margin-bottom: 0.5rem;
   font-weight: 500;
   color: ${({ theme }) => theme.colors.textColor};
+  cursor:pointer;
+  text-decoration:underline;
 `;
 
 export const CardText = styled.p`

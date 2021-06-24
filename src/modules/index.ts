@@ -1,0 +1,1 @@
+export { getResumeMarkdown } from "./get-resume"
