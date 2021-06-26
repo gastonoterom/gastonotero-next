@@ -29,9 +29,3 @@ export const Container = styled.div`
     text-justify: inter-word;
   }
 `;
-
-export const Title = styled.h1`
-  font-size: 20px;
-  text-align: justify;
-  text-justify: inter-word;
-`;

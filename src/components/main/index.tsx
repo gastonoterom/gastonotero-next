@@ -1,3 +1,4 @@
+import { PageTitle } from "@components/page-titles";
 import React from "react";
 
 import { Wrapper, Container } from "./styled";

@@ -1,14 +1,14 @@
 import React from "react";
 import { Wrapper, Header, Footer } from "@components";
-import { Container } from "./styled"
+import { BodyContainer } from "@components";
 
 const Home: React.FC = () => {
   return (
     <Wrapper>
       <Header />
-      <Container>
+      <BodyContainer>
         <p>hello world</p>
-      </Container>
+      </BodyContainer>
       <Footer />
     </Wrapper>
   );

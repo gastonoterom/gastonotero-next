@@ -1,7 +1,13 @@
 import React from "react";
 import { GetStaticProps } from "next";
-import { Wrapper, Header, Footer, PostsOverview } from "@components";
-import { Container, Title } from "./styled";
+import {
+  Wrapper,
+  Header,
+  Footer,
+  PostsOverview,
+  PageTitle,
+  BodyContainer,
+} from "@components";
 import { Article } from "@interfaces/Article";
 import { getPosts } from "@lib";
 
@@ -9,10 +15,10 @@ export default function Blog({ posts }: { posts: Article[] }) {
   return (
     <Wrapper>
       <Header />
-      <Container>
-        <Title>Latest Posts.</Title>
+      <BodyContainer>
+        <PageTitle>Latest Posts.</PageTitle>
         <PostsOverview posts={posts} />
-      </Container>
+      </BodyContainer>
       <Footer />
     </Wrapper>
   );
@@ -20,7 +26,7 @@ export default function Blog({ posts }: { posts: Article[] }) {
 
 export const getStaticProps: GetStaticProps = async () => {
   const posts: Article[] = await getPosts();
-  
+
   return {
     props: { posts },
   };

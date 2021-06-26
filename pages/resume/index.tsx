@@ -1,9 +1,8 @@
 import React from "react";
-import { Wrapper, Header, Footer } from "@components";
+import { Wrapper, Header, Footer, PageTitle, PageSubTitle, BodyContainer } from "@components";
 import { serialize } from "next-mdx-remote/serialize";
 import { MDXRemote, MDXRemoteSerializeResult } from "next-mdx-remote";
 import { GetStaticProps } from "next";
-import { Container, StyledTitle, StyledSubtitle } from "./styled";
 import { getResume } from "@lib";
 
 interface Props {
@@ -11,14 +10,15 @@ interface Props {
 }
 
 export default function Resume({ resumeMdx }: Props) {
+
   return (
     <Wrapper>
       <Header />
-      <Container>
-        <StyledTitle>Contact Me At</StyledTitle>
-        <StyledSubtitle>mail@gastonotero.com</StyledSubtitle>
+      <BodyContainer>
+        <PageTitle size={40}>Contact Me At</PageTitle>
+        <PageSubTitle size={25}>mail@gastonotero.com</PageSubTitle>
         <MDXRemote {...resumeMdx} />
-      </Container>
+      </BodyContainer>
       <Footer />
     </Wrapper>
   );
