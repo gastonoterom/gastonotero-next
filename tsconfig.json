@@ -21,14 +21,12 @@
       "@interfaces": ["src/interfaces"],
       "@components/*": ["src/components/*"],
       "@components": ["src/components"],
-      "@styles/*": ["src/styles/*"],
-      "@styles": ["src/styles"],
       "@public/*": ["public/*"],
       "@public": ["public"],
       "@redux/*": ["src/redux/*"],
       "@redux": ["src/redux"],
-      "@modules/*": ["src/modules/*"],
-      "@modules": ["src/modules"]
+      "@lib/*": ["lib/*"],
+      "@lib": ["lib"]
     }
   },
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],

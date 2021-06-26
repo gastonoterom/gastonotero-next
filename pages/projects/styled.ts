@@ -6,6 +6,9 @@ export const Container = styled.div`
   padding-top: 5vh;
   padding-left: 10vw;
   padding-right: 10vw;
+
+  min-height: 100%;
+
   @media (min-width:550px){
     padding-left: 20vw;
     padding-right: 20vw;
@@ -14,6 +17,10 @@ export const Container = styled.div`
   background-color: ${({ theme }) => theme.colors.cardsBg};
   color: ${({ theme }) => theme.colors.textColor};
 
+  h1 {
+    font-size: 40px;
+    text-align: center;
+  }
   h2 {
     font-size: 30px;
     text-align: justify;
@@ -24,12 +31,3 @@ export const Container = styled.div`
     text-justify: inter-word;
   }
 `;
-
-export const StyledTitle = styled.h1`
-  font-size: 40px;
-  text-align: center;
-`
-
-export const StyledSubtitle = styled.h2`
-  text-align: center !important;
-`

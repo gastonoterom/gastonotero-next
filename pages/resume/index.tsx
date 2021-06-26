@@ -1,38 +1,32 @@
 import React from "react";
-
 import { Wrapper, Header, Footer } from "@components";
-import GlobalStyle from "@styles/globalStyles";
-
-import { serialize } from 'next-mdx-remote/serialize'
-import { MDXRemote, MDXRemoteSerializeResult } from 'next-mdx-remote'
-
-import { GetStaticProps } from 'next'
-
-import { Container } from "./styled"
-
-import { getResumeMarkdown } from "@modules"
+import { serialize } from "next-mdx-remote/serialize";
+import { MDXRemote, MDXRemoteSerializeResult } from "next-mdx-remote";
+import { GetStaticProps } from "next";
+import { Container, StyledTitle, StyledSubtitle } from "./styled";
+import { getResume } from "@lib";
 
 interface Props {
-  mdxSource: MDXRemoteSerializeResult
+  resumeMdx: MDXRemoteSerializeResult;
 }
 
-export default function Resume({ mdxSource }: Props) {
+export default function Resume({ resumeMdx }: Props) {
   return (
     <Wrapper>
-      <GlobalStyle />
       <Header />
       <Container>
-        <MDXRemote {...mdxSource} />
+        <StyledTitle>Contact Me.</StyledTitle>
+        <StyledSubtitle>mail@gastonotero.com</StyledSubtitle>
+        <MDXRemote {...resumeMdx} />
       </Container>
       <Footer />
     </Wrapper>
   );
-};
-
-export const getStaticProps: GetStaticProps = async () => {
-  const resumeMarkdown = getResumeMarkdown();
-  const mdxSource = await serialize(resumeMarkdown)
-  return { props: { mdxSource } }
 }
 
+export const getStaticProps: GetStaticProps = async () => {
+  const resume = getResume();
+  const resumeMdx = await serialize(resume);
 
+  return { props: { resumeMdx } };
+};

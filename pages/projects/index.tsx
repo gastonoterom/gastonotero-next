@@ -1,13 +1,14 @@
 import React from "react";
-
-import { Wrapper, Header, Main, Footer, Navigation } from "@components";
-import GlobalStyle from "@styles/globalStyles";
+import { Wrapper, Header, Footer } from "@components";
+import { Container } from "./styled"
 
 const Home: React.FC = () => {
   return (
     <Wrapper>
-      <GlobalStyle />
       <Header />
+      <Container>
+        <p>hello world</p>
+      </Container>
       <Footer />
     </Wrapper>
   );

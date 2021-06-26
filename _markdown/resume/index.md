@@ -1,12 +1,10 @@
-# My Resume.
-
-## About me
+## About me.
 
 I'm a software engineering student with a passion for technology, a background in IT and full
 stack development. A colleague that thrives in fast-paced work environments and team
 projects, always eager to learn new skills with an open mind.
 
-## Work Experience
+## Work Experience.
 
 - **MOODTECHNOLOGY (2021 - Now):** Fullstack Developer
 
@@ -31,11 +29,11 @@ projects, always eager to learn new skills with an open mind.
   Developer of a python-flask and kafka app that monitors the status of every company-owned
   router with real time updates
 
-## Education
+## Education.
 
 - **Universidad Tecnológica Nacional (2018-present):** Software engineering, currently in 4th year.
 
-## Skills
+## Skills.
 
 - **Programming**
 
