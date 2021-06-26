@@ -13,6 +13,8 @@ export const Container = styled.div`
     padding-left: 20vw;
     padding-right: 20vw;
   }
+
+  flex: 1;
   
   background-color: ${({ theme }) => theme.colors.cardsBg};
   color: ${({ theme }) => theme.colors.textColor};

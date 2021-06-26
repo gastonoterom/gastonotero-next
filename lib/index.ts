@@ -4,4 +4,6 @@ export {
   getPostsPaths,
   getProjectsPaths,
   getResume,
+  getPost,
+  getProject,
 } from "./files-api";

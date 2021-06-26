@@ -16,7 +16,7 @@ export const ListItem = styled.div`
   }
 `;
 
-export const ArticleTitle = styled.p`
+export const ArticleTitle = styled.h1`
   font-size: 22px;
   margin-bottom: 5px;
 `;

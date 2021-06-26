@@ -8,12 +8,19 @@ const dark: DefaultTheme = {
     ...common.colors,
     toggleBorder: "#556678",
     toggleBackground: "#20232A",
+    
     background: "#20232A",
     headerBg: "#20232A",
     cardsBg: "#1A1C22",
-    textColor: "#e3d9c5",
+
+    titleColor: "#F4F9F9",
+    hoverTitleColor: "#d0d0d0",
+
+    textColor: "#E9ECEF",
+    hoverTextColor: "#766161",
+
     dodgerBlue: "#0062CC",
-    logo: "#e3d9c5"
+    logo: "#F4F9F9",
   },
 };
 

@@ -8,7 +8,7 @@ import matter from "gray-matter";
  * @param directory Name of the directory to be listed.
  * @returns List of files from a given directory.
  */
-export const getFiles = (dir: string): string[] => {
+const getFiles = (dir: string): string[] => {
   return fs.readdirSync(join(process.cwd(), dir), "utf-8");
 };
 
@@ -18,7 +18,7 @@ export const getFiles = (dir: string): string[] => {
  * @param dir name of the directory where files will be fetched
  * @returns Function that when called will return the file content of the file from the directory
  */
-export const getFile = (dir) => {
+const getFile = (dir) => {
   return (file) => {
     return fs.readFileSync(join(process.cwd(), dir, file), "utf-8");
   };
@@ -28,7 +28,7 @@ export const getFile = (dir) => {
  * @param file File to be parsed.
  * @returns Article.
  */
-export const getArticle = (file: string): Article => {
+const getArticle = (file: string): Article => {
   let { data, content }: { data: any; content: string } = matter(file);
   return { ...data, content };
 };
@@ -38,7 +38,7 @@ export const getArticle = (file: string): Article => {
  * @param dir Directory where articles will be fetched.
  * @returns Articles array.
  */
-export const getArticles = (dir: string): Article[] => {
+const getArticles = (dir: string): Article[] => {
   return getFiles(dir).map((fileName) => getArticle(getFile(dir)(fileName)));
 };
 
@@ -88,4 +88,16 @@ export const getProjectsPaths = (): ArticlePath[] => {
  */
 export const getResume = (): string => {
   return getFile("_markdown/resume")("index.md");
+};
+
+/** Returns a single post
+ */
+export const getPost = (id): Article => {
+  return getArticle(getFile("_markdown/blog")(id + ".md"));
+};
+
+/** Returns a single project
+ */
+export const getProject = (id): Article => {
+  return getArticle(getFile("_markdown/projects")(id + ".md"));
 };

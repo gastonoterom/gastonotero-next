@@ -14,11 +14,6 @@ export const Container = styled.div`
   background-color: ${({ theme }) => theme.colors.cardsBg};
   color: ${({ theme }) => theme.colors.textColor};
 
-  h2 {
-    font-size: 30px;
-    text-align: justify;
-    text-justify: inter-word;
-  }
   p {
     text-align: justify;
     text-justify: inter-word;
@@ -31,5 +26,6 @@ export const StyledTitle = styled.h1`
 `
 
 export const StyledSubtitle = styled.h2`
-  text-align: center !important;
+  text-align: center ;
+  font-size: 25px;
 `

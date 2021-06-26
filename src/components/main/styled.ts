@@ -4,7 +4,7 @@ export const Wrapper = styled.div`
   display: flex;
   justify-content: center;
   background-color: ${({ theme }) => theme.colors.background};
-  padding: 2rem 0;
+  padding: 1rem 0;
   color: ${({ theme }) => theme.colors.white};
 `;
 
@@ -16,7 +16,7 @@ export const Container = styled.div`
     font-size: 5.5rem;
     font-weight: 300;
     line-height: 5.5rem;
-    padding-bottom: 10vh;
+    padding-bottom: 3rem;
     color: ${({ theme }) => theme.colors.textColor};
   }
   p {

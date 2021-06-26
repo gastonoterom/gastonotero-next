@@ -1,25 +1,43 @@
 import React from "react";
 import Link from "next/link";
 import { Article } from "@interfaces/Article";
-import { Row, Col, Container } from "./styled";
+import {
+  ListItem,
+  Container,
+  ArticleTitle,
+  ArticleDate,
+  ArticleDescription,
+} from "./styled";
 
 interface Props {
   articles: Article[];
   basePage: string;
 }
 
+
+
+function ArticleOverview({ article }: { article: Article }) {
+  return (
+    <div>
+      <ArticleTitle>- {article.title}</ArticleTitle>
+      <ArticleDate> {article.iso8601date}</ArticleDate>
+      <ArticleDescription>{article.description}</ArticleDescription>
+    </div>
+  );
+}
+
 function ArticlesOverview({ articles, basePage }: Props) {
   return (
     <Container>
-      {articles.map((article) => (
-        <Row key={article.id}>
-          <Col>
-            <Link href={basePage + "/" + article.id}>
-              <h4>{article.title}</h4>
-            </Link>
-          </Col>
-        </Row>
-      ))}
+      <div>
+        {articles.map((article) => (
+          <Link key={article.id} href={basePage + "/" + article.id}>
+            <ListItem >
+              <ArticleOverview article={article} />
+            </ListItem>
+          </Link>
+        ))}
+      </div>
     </Container>
   );
 }

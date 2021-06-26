@@ -1,3 +1,5 @@
+import { MDXRemoteSerializeResult } from "next-mdx-remote";
+
 /**
  * Article interface that represents a markdown blog article.
  */
@@ -9,6 +11,8 @@ export interface Article {
   iso8601date: string;
 
   content: string;
+
+  mdx?: MDXRemoteSerializeResult;
 }
 
 export interface ArticlePath {
