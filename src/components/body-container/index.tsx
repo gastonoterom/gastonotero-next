@@ -1,6 +1,9 @@
-import { Container } from "./styled";
+import { Container, SubContainer } from "./styled";
 
 export function BodyContainer({ children }) {
-  return <Container>{children}</Container>;
+  return (
+    <Container>
+      <SubContainer>{children}</SubContainer>
+    </Container>
+  );
 }
-

@@ -3,7 +3,6 @@ import styled from "styled-components";
 export const Container = styled.div`
   display: flex;
   flex: 1;
-  justify-content: center;
   align-item: center;
   padding-bottom: 3rem;
   background-color: ${({ theme }) => theme.colors.cardsBg};

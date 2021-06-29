@@ -1,12 +1,17 @@
 import styled from "styled-components";
 
+export const SubContainer = styled.div`
+  max-width: 800px;
+  margin: auto;
+`;
+
 export const Container = styled.div`
   justify-content: center;
   align-item: center;
   padding-top: 5vh;
   padding-left: 10vw;
   padding-right: 10vw;
-  
+
   min-height: 100%;
 
   @media (min-width: 550px) {
@@ -31,21 +36,21 @@ export const Container = styled.div`
 
   /* unvisited link */
   a:link {
-    color: #FF7600;
+    color: #ff7600;
   }
 
   /* visited link */
   a:visited {
-    color: #FF7600;
+    color: #ff7600;
   }
 
   /* mouse over link */
   a:hover {
-    color: #CD113B;
+    color: #cd113b;
   }
 
   /* selected link */
   a:active {
-    color: #FF7600;
+    color: #ff7600;
   }
 `;

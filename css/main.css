@@ -17,3 +17,26 @@ body {
 body > div {
   min-height: 100vh;
 }
+
+/* Custom scrollbar */
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #DDDDDD;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #222831;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #444444;
+}

@@ -28,7 +28,22 @@ export const Container = styled.div`
   }
   p {
     justify-content: center;
+    margin-bottom: 5px;
+  }
+
+  li {
+    margin-bottom: 5px;
   }
   max-width: 800px !important;
   margin: auto;
+
+  code {
+    overflow: auto;
+    display: block;
+  }
+
+  pre {
+    background: #171717;
+  }
+
 `;

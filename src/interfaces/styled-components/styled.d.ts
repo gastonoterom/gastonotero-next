@@ -11,7 +11,12 @@ type ExtendedColors =
   | "headerBg"
   | "cardsBg"
   | "textColor"
-  | "dodgerBlue";
+  | "dodgerBlue"
+  | "toggleBackground"
+  | "hoverTitleColor"
+  | "titleColor"
+  | "logo"
+  | "hoverTextColor";
 declare module "styled-components" {
   export interface BaseTheme {
     colors: Record<CommonColors, string>;

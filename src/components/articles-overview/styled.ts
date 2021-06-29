@@ -1,8 +1,6 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
-  justify-content: center;
-  align-item: center;
   padding-bottom: 3rem;
   background-color: ${({ theme }) => theme.colors.cardsBg};
   max-width: 800px !important;
@@ -19,11 +17,13 @@ export const ListItem = styled.div`
 `;
 
 export const ArticleTitle = styled.p`
+  text-align: left !important;
   font-size: 22px;
   margin-bottom: 5px;
 `;
 
 export const ArticleDate = styled.p`
+  text-align: left !important;
   font-size: 13px;
   margin-top: 0px;
   margin-left: 15px;

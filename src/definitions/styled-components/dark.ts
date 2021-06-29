@@ -6,9 +6,10 @@ import { common } from "./common";
 const dark: DefaultTheme = {
   colors: {
     ...common.colors,
+    gradient: "#ffffff",
     toggleBorder: "#556678",
     toggleBackground: "#20232A",
-    
+
     background: "#20232A",
     headerBg: "#20232A",
     cardsBg: "#1A1C22",
@@ -21,8 +22,6 @@ const dark: DefaultTheme = {
 
     dodgerBlue: "#0062CC",
     logo: "#F4F9F9",
-
-    
   },
 };
 
