@@ -8,7 +8,7 @@ import {
   PageTitle,
   BodyContainer,
 } from "@components";
-import { Article } from "@interfaces/Article";
+import { Article } from "@interfaces/article";
 import { getPosts } from "@lib";
 import Head from "next/head";
 

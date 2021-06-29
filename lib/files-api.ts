@@ -1,6 +1,6 @@
 import fs from "fs";
 import { join } from "path";
-import { Article, ArticlePath } from "@interfaces/Article";
+import { Article, ArticlePath } from "@interfaces/article";
 import matter from "gray-matter";
 
 /** Returns a list of all the files of a given folder in the project directory.

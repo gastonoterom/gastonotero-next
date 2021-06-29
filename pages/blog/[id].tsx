@@ -7,7 +7,7 @@ import {
   ArticleComponent,
   BodyContainer,
 } from "@components";
-import { Article } from "@interfaces/Article";
+import { Article } from "@interfaces/article";
 import { getPost, getPostsPaths } from "@lib";
 import { serialize } from "next-mdx-remote/serialize";
 import { parseImages } from "@lib/files-api";

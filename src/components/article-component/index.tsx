@@ -1,4 +1,4 @@
-import { Article } from "@interfaces/Article";
+import { Article } from "@interfaces/article";
 
 import { MDXRemote } from "next-mdx-remote";
 import { PageTitle } from "@components/page-titles";

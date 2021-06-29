@@ -1,6 +1,6 @@
 import React from "react";
 import Link from "next/link";
-import { Article } from "@interfaces/Article";
+import { Article } from "@interfaces/article";
 import {
   ListItem,
   Container,
