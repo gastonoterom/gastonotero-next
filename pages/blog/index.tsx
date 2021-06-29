@@ -10,17 +10,24 @@ import {
 } from "@components";
 import { Article } from "@interfaces/Article";
 import { getPosts } from "@lib";
+import Head from "next/head";
 
 export default function Blog({ posts }: { posts: Article[] }) {
   return (
-    <Wrapper>
-      <Header />
-      <BodyContainer>
-        <PageTitle>Latest Posts.</PageTitle>
-        <PostsOverview posts={posts} />
-      </BodyContainer>
-      <Footer />
-    </Wrapper>
+    <>
+      <Head>
+        <title>Blog</title>
+      </Head>
+
+      <Wrapper>
+        <Header />
+        <BodyContainer>
+          <PageTitle>Latest Posts.</PageTitle>
+          <PostsOverview posts={posts} />
+        </BodyContainer>
+        <Footer />
+      </Wrapper>
+    </>
   );
 }
 

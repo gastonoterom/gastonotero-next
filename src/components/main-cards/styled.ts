@@ -22,17 +22,12 @@ export const Row = styled.div`
 export const Col = styled.div`
   flex: 0 0 33%;
   max-width: 33%;
-  cursor:pointer;
+  cursor: pointer;
   @media (max-width: 575px) {
     max-width: 100%;
   }
 
-  
   color: ${({ theme }) => theme.colors.textColor};
-
-  &:hover {
-    color: ${({ theme }) => theme.colors.hoverTextColor};
-  }
 `;
 
 export const Card = styled.div`
@@ -43,15 +38,21 @@ export const Card = styled.div`
 export const CardBody = styled.div`
   display: flex;
   flex-direction: column;
+
+  &:hover h3 {
+    color: ${({ theme }) => theme.colors.hoverTitleColor};
+  }
+  &:hover p {
+    color: ${({ theme }) => theme.colors.hoverTextColor};
+  }
 `;
 
 export const CardTitle = styled.h3`
   font-size: 1.75rem;
   margin-bottom: 0.5rem;
   font-weight: 500;
-  
-  
-  text-decoration:underline;
+
+  text-decoration: underline;
 `;
 
 export const CardText = styled.p`

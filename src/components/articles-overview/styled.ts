@@ -5,13 +5,15 @@ export const Container = styled.div`
   align-item: center;
   padding-bottom: 3rem;
   background-color: ${({ theme }) => theme.colors.cardsBg};
+  max-width: 800px !important;
+  margin: auto;
 `;
 
 export const ListItem = styled.div`
   cursor: pointer;
   color: ${({ theme }) => theme.colors.textColor};
 
-  &:hover{
+  &:hover {
     color: ${({ theme }) => theme.colors.hoverTextColor};
   }
 `;
@@ -22,7 +24,7 @@ export const ArticleTitle = styled.p`
 `;
 
 export const ArticleDate = styled.p`
-  font-size: 14px;
+  font-size: 13px;
   margin-top: 0px;
   margin-left: 15px;
 `;

@@ -92,12 +92,26 @@ export const getResume = (): string => {
 
 /** Returns a single post
  */
-export const getPost = (id): Article => {
+export const getPost = (id: string): Article => {
   return getArticle(getFile("_markdown/blog")(id + ".md"));
 };
 
 /** Returns a single project
  */
-export const getProject = (id): Article => {
+export const getProject = (id: string): Article => {
   return getArticle(getFile("_markdown/projects")(id + ".md"));
+};
+
+/** Parse images
+ *  Replaces the standard md image source with a nextjs image component
+ */
+export const parseImages = (articleContent: string): string => {
+  return articleContent.replace(
+    /!\[([^\[]+)\]\(([^\)]+)\)/g,
+    `<div className="unset-img"> 
+      <Image src='$2' alt='$1'  
+        layout="fill" className="custom-img"
+      />
+    </div>`
+  );
 };

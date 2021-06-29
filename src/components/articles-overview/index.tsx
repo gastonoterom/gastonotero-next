@@ -14,14 +14,14 @@ interface Props {
   basePage: string;
 }
 
-
-
 function ArticleOverview({ article }: { article: Article }) {
   return (
     <div>
-      <ArticleTitle>- {article.title}</ArticleTitle>
+      <ArticleTitle>{article.title}</ArticleTitle>
       <ArticleDate> {article.iso8601date}</ArticleDate>
-      <ArticleDescription>{article.description}</ArticleDescription>
+      {/**
+       *  <ArticleDescription>{article.description}</ArticleDescription>
+       * */}
     </div>
   );
 }
@@ -32,7 +32,7 @@ function ArticlesOverview({ articles, basePage }: Props) {
       <div>
         {articles.map((article) => (
           <Link key={article.id} href={basePage + "/" + article.id}>
-            <ListItem >
+            <ListItem>
               <ArticleOverview article={article} />
             </ListItem>
           </Link>

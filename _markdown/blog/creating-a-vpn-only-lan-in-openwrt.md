@@ -1,7 +1,7 @@
 ---
 id: creating-a-vpn-only-lan-in-openwrt
-title: Creating a vpn only lan in openwrt
-description: Creating a vpn only lan in openwrt
+title: Creating a vpn only lan in OpenWRT
+description: How to create a new vlan in an OpenWRT router for vpn only access to the internet. Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum
 author: Gaston Otero
 iso8601date: "2021-09-27"
 ---
@@ -30,10 +30,12 @@ to enjoy their favourite TV shows in Netf\*\*\*.
 2 Wireless networks
 
 - Your regular old WiFi network, with your ISP provided IP
-  ![final 01](/images/creating-a-vpn-only-lan-in-openwrt/final_01.png)
+
+![final 01](/images/creating-a-vpn-only-lan-in-openwrt/final_01.png)
 
 - A new WiFi, with traffic routed through the WireGuard VPN server
-  ![final 01](/images/creating-a-vpn-only-lan-in-openwrt/final_02.png)
+
+![final 01](/images/creating-a-vpn-only-lan-in-openwrt/final_02.png)
 
 ## Previous Steps
 
@@ -44,6 +46,8 @@ This guide assumes that you already have:
 - Basic knowledge of OpenWRT, WireGuard and networking
 
 ## Getting started
+
+### Install and configure the necessary tools
 
 - Install WireGuard in your router
 
@@ -82,7 +86,7 @@ This guide assumes that you already have:
 
   Copy and save the generated internal IP to use when connecting to the mullvad servers.
 
-## Create and Configure the Secondary LAN Interface
+### Create and Configure the Secondary LAN Interface
 
 This lan interface is going to have all its traffic routed via wireguard,
 in this example this secondary LAN interface is going to be composed of only a secondary wifi network
@@ -91,7 +95,9 @@ in the 2.4GHz radio, but feel free to experiment with other wifi frequencies and
 - Go into the Network -> Interfaces menu
 - Click "Add new interface..."
 - Enter "lan_vpn" as the interface name, "Static address" as the protocol and check "Bridge Interfaces"
-  ![lan_vpn create interface](/images/creating-a-vpn-only-lan-in-openwrt/1.png)
+
+![lan_vpn create interface](/images/creating-a-vpn-only-lan-in-openwrt/1.png)
+
 - Click on the "Edit" button of the lan_vpn interface
 
   General settings:
@@ -99,21 +105,27 @@ in the 2.4GHz radio, but feel free to experiment with other wifi frequencies and
   - IPv4 address: choose an UNUSED ipv4 address from an UNUSED network, for example: 192.168.95.1
   - IPv4 netmask: 255.255.255.0
   - Use custom DNS servers: Choose the DNS servers of your VPN provider! This will prevent DNS leaks. For mullvad, it's 10.64.0.1
-    ![lan_vpn general settings](/images/creating-a-vpn-only-lan-in-openwrt/2.png)
 
-  DHCP Server -> Advanced Settings:
+![lan_vpn general settings](/images/creating-a-vpn-only-lan-in-openwrt/2.png)
 
-  - DHCP-Options: enter a 6 followed by a comma and your VPN DNS server, for example, "6,10.64.0.1"
-    ![lan_vpn dhcp advanced](/images/creating-a-vpn-only-lan-in-openwrt/3.png)
+DHCP Server -> Advanced Settings:
+
+- DHCP-Options: enter a 6 followed by a comma and your VPN DNS server, for example, "6,10.64.0.1"
+
+![lan_vpn dhcp advanced](/images/creating-a-vpn-only-lan-in-openwrt/3.png)
 
 Now we're going to create the secondary WiFi network
 
 - Connect into your router's LuCI interface
 - Go into the Network -> Wireless menu
 - Click in the "Add" button of the 2.4GHz radio
-  ![wifi_vpn add](/images/creating-a-vpn-only-lan-in-openwrt/4.png)
+
+![wifi_vpn add](/images/creating-a-vpn-only-lan-in-openwrt/4.png)
+
 - Select "Access Point" as the Mode, and enter the desired ESSID and select "lan_vpn" as network.
-  ![wifi_vpn settings](/images/creating-a-vpn-only-lan-in-openwrt/5.png)
+
+![wifi_vpn settings](/images/creating-a-vpn-only-lan-in-openwrt/5.png)
+
 - Go into Wireless Security, select "WPA2-PSK" as the encryption type, and enter the WiFi password on "key"
 
 ## Create and configure the WireGuard interface
@@ -124,7 +136,7 @@ This interface is going to connect to your WG server as a client, allowing you i
 - Go into the Network -> Interfaces menu
 - Click on "add new interface", put your desired name and select "WireGuard VPN" as the protocol and create the interface
 
-  ![create WG interface](/images/creating-a-vpn-only-lan-in-openwrt/6.png)
+![create WG interface](/images/creating-a-vpn-only-lan-in-openwrt/6.png)
 
 - Edit the WireGuard interface with the following settings
 
@@ -133,18 +145,20 @@ This interface is going to connect to your WG server as a client, allowing you i
   - Private Key: Paste the WG PRIVATE KEY generated in the previous steps
   - Listen Port: Enter the Listen Port specified by your VPN provider, leave blank if random. For mullvad, type 51820
   - IP Addresses: Enter the IP address that your VPN provider specified for YOU, if using Mullvad it's the internal IP we generated earlier
-    ![WG general settings](/images/creating-a-vpn-only-lan-in-openwrt/7.png)
 
-  Peers Tab:
+![WG general settings](/images/creating-a-vpn-only-lan-in-openwrt/7.png)
 
-  - Public Key: The Public key of the WireGuard server you're trying to connect to
-  - Allowed IPs: 0.0.0.0/0 (We want to route all lan_vpn traffic through the interface)
-  - Route Allowed IPs: **IMPORTANT**, leave this option **UNCHECKED**, this will route **ALL** your traffic through the VPN, we just want to route lan_vpn traffic through it, we are going to create the routes manually
-  - Endpoint host: The public IP address of the wireguard server.
-  - Endpoint port: The port of the VPN WireGuard Server, if using Mullvad type 51820
-    ![WG peers](/images/creating-a-vpn-only-lan-in-openwrt/8.png)
+Peers Tab:
 
-## Firewall Setup
+- Public Key: The Public key of the WireGuard server you're trying to connect to
+- Allowed IPs: 0.0.0.0/0 (We want to route all lan_vpn traffic through the interface)
+- Route Allowed IPs: **IMPORTANT**, leave this option **UNCHECKED**, this will route **ALL** your traffic through the VPN, we just want to route lan_vpn traffic through it, we are going to create the routes manually
+- Endpoint host: The public IP address of the wireguard server.
+- Endpoint port: The port of the VPN WireGuard Server, if using Mullvad type 51820
+
+![WG peers](/images/creating-a-vpn-only-lan-in-openwrt/8.png)
+
+### Firewall Setup
 
 **"WGZONE" Firewall zone**
 
@@ -156,7 +170,8 @@ This interface is going to connect to your WG server as a client, allowing you i
 - Check the "masquerading" and "mss clamping" boxes
 - Choose the WGINTERFACE interface we created previously as the covered network
 - Save
-  ![firewall wgzone](/images/creating-a-vpn-only-lan-in-openwrt/9.png)
+
+![firewall wgzone](/images/creating-a-vpn-only-lan-in-openwrt/9.png)
 
 **"lan_vpn" Firewall zone**
 
@@ -167,9 +182,10 @@ This interface is going to connect to your WG server as a client, allowing you i
 - Choose the lan_vpn interface we created previously as the covered network
 - Choose "WGZONE" in "Allow forward to destination zones"
 - Save
-  ![firewall lan_vpn](/images/creating-a-vpn-only-lan-in-openwrt/10.png)
 
-## Routing
+![firewall lan_vpn](/images/creating-a-vpn-only-lan-in-openwrt/10.png)
+
+### Routing
 
 We're almost done!
 We have successfully set up
@@ -191,20 +207,22 @@ through the interface WGINTERFACE
   `nano /etc/config/network`
 
 - Add the following lines at the end of the file
-  ![routing table](/images/creating-a-vpn-only-lan-in-openwrt/11.png)
 
-  The first rule, tells the router to look for the table '1742' when a packet comes from the 'lan_vpn'
+![routing table](/images/creating-a-vpn-only-lan-in-openwrt/11.png)
 
-  The second rule, creates a route, with table number of '1742' and tells the router to send the traffic through the WGINTERFACE
+The first rule, tells the router to look for the table '1742' when a packet comes from the 'lan_vpn'
+
+The second rule, creates a route, with table number of '1742' and tells the router to send the traffic through the WGINTERFACE
 
 - Restart the network service
 
   `service network restart`
 
 And voila! You should now have two wireless networks. One that uses the VPN, and one that does not!
+
 ![final result](/images/creating-a-vpn-only-lan-in-openwrt/12.png)
 
-# Testing
+## Testing
 
 If using Mullvad you should check [here](https://mullvad.net/en/check/)
 
@@ -213,5 +231,7 @@ If using Mullvad you should check [here](https://mullvad.net/en/check/)
 You can also use traceroute (or tracert on windows)
 
 **Route test:**
+
 ![tracert vpn](/images/creating-a-vpn-only-lan-in-openwrt/14.png)
+
 Traffic goes from the router directly into the wireguard gateway, then it exits from the remote vpn server wan gateway.

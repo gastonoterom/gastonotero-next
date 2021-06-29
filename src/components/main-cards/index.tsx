@@ -21,17 +21,16 @@ export const Navigation: React.FC = () => {
         {
           // @ts-ignore
           data.sections.map((section) => (
-              <Link key={section.name} href={section.url}>
-                <Col>
-                  <Card>
-                    <CardBody>
-                      <CardTitle>{section.name}</CardTitle>
-
-                      <CardText>{section.description}</CardText>
-                    </CardBody>
-                  </Card>
-                </Col>
-              </Link>
+            <Link key={section.name} href={section.url}>
+              <Col>
+                <Card>
+                  <CardBody>
+                    <CardTitle>{section.name}</CardTitle>
+                    <CardText>{section.description}</CardText>
+                  </CardBody>
+                </Card>
+              </Col>
+            </Link>
           ))
         }
       </Row>

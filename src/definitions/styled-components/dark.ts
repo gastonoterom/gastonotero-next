@@ -14,13 +14,15 @@ const dark: DefaultTheme = {
     cardsBg: "#1A1C22",
 
     titleColor: "#F4F9F9",
-    hoverTitleColor: "#d0d0d0",
+    hoverTitleColor: "#FFD8CC",
 
     textColor: "#E9ECEF",
-    hoverTextColor: "#766161",
+    hoverTextColor: "#FFEEDB",
 
     dodgerBlue: "#0062CC",
     logo: "#F4F9F9",
+
+    
   },
 };
 
