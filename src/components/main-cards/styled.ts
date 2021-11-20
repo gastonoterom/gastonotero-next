@@ -11,7 +11,6 @@ export const Container = styled.div`
 
 export const Row = styled.div`
   display: flex;
-  flex-wrap: wrap;
   max-width: 71rem;
 
   @media (max-width: 575px) {
