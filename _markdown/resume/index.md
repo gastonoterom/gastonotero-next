@@ -6,7 +6,11 @@ projects, always eager to learn new skills with an open mind.
 
 ## Work Experience.
 
-- **MOODTECHNOLOGY (2021 - Now):** Fullstack Developer
+- **TUTOR.COM (2021 - Now):** Tutor for college students
+
+  Tutor of computer science, python and linux systems administration for college students of a diverse range of US based colleges, universities and education programs.
+
+- **MOODTECHNOLOGY (2021):** Fullstack Developer
 
   Full stack developer at an Argentinian firm, developing and maintaining apps primarily with VueJS and NodeJS. Using cloud infrastructure
   with docker containerization.
