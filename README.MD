@@ -6,4 +6,4 @@ Check it out at [gastonotero.com](https://gastonotero.com)
 
 ## Landing page
 
-![landing](landing_page .png)
+![landing](landing_page.png)
