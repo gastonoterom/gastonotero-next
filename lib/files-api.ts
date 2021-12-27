@@ -13,7 +13,7 @@ const getFiles = (dir: string): string[] => {
 };
 
 /** Calling this function with a directory allows to easily fetch files from it later
- * usage exampe: getFile(dir)(fileName)
+ * usage example: getFile(dir)(fileName)
  *
  * @param dir name of the directory where files will be fetched
  * @returns Function that when called will return the file content of the file from the directory
@@ -108,8 +108,8 @@ export const getProject = (id: string): Article => {
 export const parseImages = (articleContent: string): string => {
   return articleContent.replace(
     /!\[([^\[]+)\]\(([^\)]+)\)/g,
-    `<div className="unset-img"> 
-      <Image src='$2' alt='$1'  
+    `<div className="unset-img">
+      <Image src='$2' alt='$1'
         layout="fill" className="custom-img"
       />
     </div>`

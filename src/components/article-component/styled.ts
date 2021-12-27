@@ -34,9 +34,10 @@ export const Container = styled.div`
   li {
     margin-bottom: 5px;
   }
+
   max-width: 800px !important;
   margin: auto;
-
+  margin-bottom: 50px;
   code {
     overflow: auto;
     display: block;
