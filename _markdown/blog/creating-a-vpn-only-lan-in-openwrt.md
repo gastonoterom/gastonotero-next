@@ -1,7 +1,7 @@
 ---
 id: creating-a-vpn-only-lan-in-openwrt
 title: Creating a vpn only lan in OpenWRT
-description: How to create a new vlan in an OpenWRT router for vpn only access to the internet. Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum
+description: How to create a new vlan in an OpenWRT router for vpn only access to the internet.
 author: Gaston Otero
 iso8601date: "2021-09-27"
 ---

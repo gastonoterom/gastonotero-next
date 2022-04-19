@@ -1,10 +1,13 @@
 ## About me.
 
-I'm a software engineering student with a passion for technology, a background in IT and full
-stack development. A colleague that thrives in fast-paced work environments and team
+I'm a software engineering student with a passion for technology, a background in IT and software development. A colleague that thrives in fast-paced work environments and team
 projects, always eager to learn new skills with an open mind.
 
 ## Work Experience.
+
+- **BETTER PROS (2022 - Now):** Backend developer
+
+  Python backend developer for American and European clients.
 
 - **TUTOR.COM (2021 - Now):** Tutor for college students
 
@@ -42,10 +45,13 @@ projects, always eager to learn new skills with an open mind.
 - **Programming**
 
   - Backend
+
     - NodeJs (Express)
-    - Python (Flask)
-    - SQL (Sqlite, Ms SQL, MariaDB & MySQL)
+    - Python (Flask, AioHTTP)
+    - SQL (Sqlite, Ms SQL, MariaDB, PostgreSQL & MySQL)
+
   - Frontend
+
     - HTML, CSS & JS
     - React
     - VueJS

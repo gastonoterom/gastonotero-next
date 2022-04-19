@@ -1,7 +1,7 @@
 ---
 id: dolarblue-api
 title: DolarBlue Rest API
-description: Rest api for Argentinian Peso - 'Blue' Dollar exchange Rate. Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum
+description: Rest api for Argentinian Peso - 'Blue'
 author: Gaston Otero
 iso8601date: "2021-12-27"
 ---
