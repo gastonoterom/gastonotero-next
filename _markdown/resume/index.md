@@ -1,6 +1,6 @@
 ## About me.
 
-I'm a software engineering student with a passion for technology, a background in IT and software development. A colleague that thrives in fast-paced work environments and team
+I'm an engineering student with a passion for technology, a background in IT and software development. A colleague that thrives in fast-paced work environments and team
 projects, always eager to learn new skills with an open mind.
 
 ## Work Experience.
