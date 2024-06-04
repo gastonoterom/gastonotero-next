@@ -1,67 +1,45 @@
 ## About me.
 
-I'm an engineering student with a passion for technology, a background in IT and software development. A colleague that thrives in fast-paced work environments and team
-projects, always eager to learn new skills with an open mind.
+I’m a Software Developer with a passion for technology. I have experience in Full Stack software development, in the IT field, and as a college-level computer science tutor for US institutions. I thrive in fast-paced work environments and team projects, and I'm always eager to learn. My main skills reside in Back End software, with a big emphasis in Domain Driven Design (DDD).
 
 ## Work Experience.
 
-- **BETTER PROS (2022 - Now):** Backend developer
+- **BETTER PROS (Apr 2022 - Present):** Software Developer
 
-  Python backend developer for American and European clients.
+Software Developer for US clients.
 
-- **TUTOR.COM (2021 - Now):** Tutor for college students
+- **TUTOR.COM (Nov 2021 - Apr 2022):** CS Tutor
 
-  Tutor of computer science, python and linux systems administration for college students of a diverse range of US based colleges, universities and education programs.
+Python, Linux systems, and Computer Science Tutor for US College students.
 
-- **MOODTECHNOLOGY (2021):** Fullstack Developer
+- **MOODTECHNOLOGY (Jan 2021 - Dec 2021):** Software Developer
 
-  Full stack developer at an Argentinian firm, developing and maintaining apps primarily with VueJS and NodeJS. Using cloud infrastructure
-  with docker containerization.
+Full-Stack developer of a NodeJS, Postgres & VueJS web application for an international client.
 
-- **FREELANCER (2020-2021):** Software Developer
+- **FREELANCER (May 2020 - Jan 2021):** Software Developer
 
-  Developer and maintainer of a nodejs and react app that manages patient appointments at a
-  well-known hospital in the city of Cordoba, Argentina.
+Designed and implemented software for private clients.
 
-  Developer and maintainer of a nodejs and electron network file manager for a notable
-  accounting firm in the city of Cordoba, Argentina.
+Private Hospital of Cordoba: 
+  Developed a NodeJS, Postgres & React web application to manage patient appointments via SMS for a prestigious hospital in Cordoba, Argentina.
 
-- **ARMANET (2019-2020):** Technician (IT dep.)
+Badra Accounting Firm: 
+  Developed a NodeJS, Postgres & React desktop (Electron) application to manage shared files for a well-known Accounting firm in Cordoba, Argentina.
 
-  Responsible of IT systems working 24/7 in over 60 different client companies around Argentina
-  and neighbouring countries.
+- **ARMANET (Jun 2019 - May 2020):** Technician (IT dep.)
 
-  In charge of over 100 servers running Linux or Windows, and around 100 mikrotik routers.
+Ping-Map: 
+Developed a Python and JQuery web application to show real time status of routers and servers on a map.
 
-  Developer of a python-flask and kafka app that monitors the status of every company-owned
-  router with real time updates
+Network design and implementation using Mikrotik and Unify products.
+
+Maintainer of cloud and physical server infrastructure using Linux and Windows Server.
 
 ## Education.
 
-- **Universidad Tecnológica Nacional (2018-present):** Software engineering, currently in 4th year.
+- **Universidad Tecnológica Nacional (2018-2024):** Software engineering, working on my thesis.
 
-## Skills.
+## Languages
 
-- **Programming**
-
-  - Backend
-
-    - NodeJs (Express)
-    - Python (Flask, AioHTTP)
-    - SQL (Sqlite, Ms SQL, MariaDB, PostgreSQL & MySQL)
-
-  - Frontend
-
-    - HTML, CSS & JS
-    - React
-    - VueJS
-    - Electron
-
-- **IT**
-
-  - Windows and Linux servers
-  - Cloud infrastructure with Amazon AWS
-  - Docker and Docker-Compose
-  - Linux networking
-  - OpenWRT and Mikrotik routers
-  - DNS and Reverse Proxys
+- **Spanish:** Native
+- **English**: Bilingual
