@@ -39,8 +39,6 @@ If you just want to get an updated buy and sell price use this route.
 Each update cycle it takes the buy and sell values of each source that could be fetched and updates
 the average of those sources in the cache.
 
-Url: https://api.gastonotero.com/dolarblue/
-
 Request type: GET
 
 Example response:
@@ -54,18 +52,11 @@ dolarblue price values. The source's date represent where the source was last fe
 in intervals together, so if a source has an old date it means it failed many times. Failed sources are not
 taken into account in the average dolarblue price, so they do not affect it.
 
-Url: https://api.gastonotero.com/dolarblue/sources
-
 Request type: GET
 
 Example response:
 
 `{ "infodolar": { "buy_price": 201, "sell_price": 204, "average_price": 202.5, "date_time": "12-24-2021 17:14:06" }, "lanacion": { "buy_price": 200, "sell_price": 204, "average_price": 202, "date_time": "12-24-2021 17:14:06" } }`
-
-### Telegram bot
-
-The Telegram bot is currently in an early Alpha state, so it may be down when you test it.
-The bot is found at telegram as [@dolarblue_ars_bot](https://t.me/dolarblue_ars_bot)
 
 ## Tech stack
 
