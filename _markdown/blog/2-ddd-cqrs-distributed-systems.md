@@ -1,5 +1,5 @@
 ---
-id: 2-satoshi-spark
+id: 2-ddd-cqrs-distributed-systems
 title: "DDD, CQRS and Distributed Systems in Python"
 description: Revisiting DDD (Domain Driven Design), CQRS (Command Query Responsibility Segregation), and Distributed Systems concepts in python
 author: Gaston Otero

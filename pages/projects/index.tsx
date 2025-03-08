@@ -27,7 +27,7 @@ export default function Projects({ projects }: { projects: Article[] }) {
 }
 
 export const getStaticProps: GetStaticProps = async () => {
-  const projects: Article[] = await getProjects();
+  const projects: Article[] = await getProjects().reverse();
 
   return {
     props: { projects },

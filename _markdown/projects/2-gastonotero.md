@@ -1,9 +1,9 @@
 ---
-id: gastonotero
+id: 2-gastonotero
 title: GastonOtero.com
 description: React Next landing page, with a blog, resume and projects section.
 author: Gaston Otero
-iso8601date: "2021-6-27"
+iso8601date: "2021-12-27"
 ---
 
 ## Statically Generated Blog & More
