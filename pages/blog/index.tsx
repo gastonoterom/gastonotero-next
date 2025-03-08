@@ -32,7 +32,7 @@ export default function Blog({ posts }: { posts: Article[] }) {
 }
 
 export const getStaticProps: GetStaticProps = async () => {
-  const posts: Article[] = await getPosts();
+  const posts: Article[] = await getPosts().reverse();
 
   return {
     props: { posts },
