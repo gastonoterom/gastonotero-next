@@ -1,27 +1,14 @@
 ---
 id: 2-satoshi-spark
-title: Satoshi Spark 🚀 🔥
+title: "DDD, CQRS and Distributed Systems in Python"
 description: Revisiting DDD (Domain Driven Design), CQRS (Command Query Responsibility Segregation), and Distributed Systems concepts in python
 author: Gaston Otero
 iso8601date: "2025-03-08"
 ---
 
-_Revisiting DDD (Domain Driven Design), CQRS (Command Query Responsibility Segregation), and Distributed Systems in python_
+_This article will be based on a sample application called Satoshi Spark 🚀 🔥_
 
-## Table of Contents
-
-- [Introduction](#introduction)
-- [Domain-Driven Design (DDD)](#domain-driven-design-ddd)
-  - [Aggregates: the building block of our domain](#aggregates-the-building-block-of-our-domain)
-  - [Abstract Repositories: avoid the ORM jail](#abstract-repositories-avoid-the-orm-jail)
-  - [Unit of Work: How to handle database transactions in the domain model](#unit-of-work-how-to-handle-database-transactions-in-the-domain-model)
-- [Command Query Responsibility Segregation (CQRS)](#command-query-responsibility-segregation-cqrs)
-  - [Write model](#write-model)
-  - [Read model](#read-model)
-- [Distributed Systems](#distributed-systems)
-  - [Transactional Outboxes: handle message reliability](#transactional-outboxes-handle-message-reliability)
-  - [Choreography Based Sagas: distributed transactions across contexts](#choreography-based-sagas-distributed-transactions-across-contexts)
-  - [From monolith to microservices](#from-monolith-to-microservices)
+This is the Github repository for the full project: [Satoshi Spark Source Code](https://github.com/gastonoterom/Satoshi-Spark)
 
 ## Introduction
 

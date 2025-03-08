@@ -3,12 +3,12 @@
   "sections": [
     {
       "name": "Blog",
-      "description": "Tech blog, mainly about software development, networking and linux. Beware, because I'm a free software enthusiast.",
+      "description": "Tech blog. Mainly about software development, networking and linux. My favorite topics are DDD (Domain Driven Design) and Distributed Systems.",
       "url": "/blog"
     },
     {
       "name": "Projects",
-      "description": "All my personal projects, many of them have their source code included.",
+      "description": "All my personal projects, with their source code included.",
       "url": "/projects"
     },
     {
