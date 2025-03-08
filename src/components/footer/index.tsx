@@ -18,12 +18,12 @@ export const Footer: React.FC = () => {
           </a>
         </ListItem>
         <ListItem>
-          <a href="https://twitter.com/_gastonotero">
+          <a href="https://www.linkedin.com/in/gaston-otero-166911184">
             <Image
-              src="/icons/twitter-icon.svg"
-              alt="twitter"
+              src="/icons/linkedin-icon.svg"
+              alt="linkedin"
               width="28"
-              height="28"
+              height="32"
             />
           </a>
         </ListItem>
