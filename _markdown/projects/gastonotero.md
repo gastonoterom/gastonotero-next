@@ -1,5 +1,5 @@
 ---
-id: 2-gastonotero
+id: gastonotero
 title: GastonOtero.com
 description: React Next landing page, with a blog, resume and projects section.
 author: Gaston Otero

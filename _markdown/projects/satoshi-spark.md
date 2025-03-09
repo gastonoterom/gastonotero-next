@@ -1,5 +1,5 @@
 ---
-id: 3-satoshi-spark
+id: satoshi-spark
 title: Satoshi Spark 🚀 🔥
 description: React Next landing page, with a blog, resume and projects section.
 author: Gaston Otero
@@ -15,4 +15,4 @@ The application is structured into several separate domains (bounded contexts) l
 
 Here is the Github repository for the full project: [Satoshi Spark Source Code](https://github.com/gastonoterom/Satoshi-Spark)
 
-And here is a blog article explaining in more depth the project's architecture: [DDD, CQRS and Distributed Systems in Python](/blog/2-ddd-cqrs-distributed-systems)
+And here is a blog article explaining in more depth the project's architecture: [DDD, CQRS and Distributed Systems in Python](/blog/ddd-cqrs-distributed-systems)
