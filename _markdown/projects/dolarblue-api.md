@@ -1,5 +1,5 @@
 ---
-id: 1-dolarblue-api
+id: dolarblue-api
 title: DolarBlue Rest API
 description: Rest api for Argentinian Peso - 'Blue'
 author: Gaston Otero
