@@ -37,7 +37,7 @@ Maintainer of cloud and physical server infrastructure using Linux and Windows S
 
 ## Education.
 
-- **Universidad Tecnológica Nacional (2018-2024):** Software engineering, working on my thesis.
+- **Universidad Tecnológica Nacional (2018-2024):** Information Systems engineer: Thesis & all exams approved, awaiting my degree.
 
 ## Languages
 
