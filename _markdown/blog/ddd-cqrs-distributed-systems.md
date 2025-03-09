@@ -10,6 +10,22 @@ _This article will be based on a sample application called Satoshi Spark ðŸš€ ðŸ
 
 This is the Github repository for the full project: [Satoshi Spark Source Code](https://github.com/gastonoterom/Satoshi-Spark)
 
+## Table of Contents
+
+- Introduction
+- Domain-Driven Design (DDD)
+  - Aggregates: the building block of our domain
+  - Abstract Repositories: avoid the ORM jail
+  - Unit of Work: How to handle database transactions in the domain model
+- Command Query Responsibility Segregation (CQRS)
+  - Write model
+  - Read model
+- Distributed Systems
+  - Transactional Outboxes: handle message reliability
+  - Choreography Based Sagas: distributed transactions across contexts
+  - From monolith to microservices
+
+
 ## Introduction
 
 Satoshi Spark is designed to facilitate crowdfunding campaigns via the Bitcoin Lightning Network. 
